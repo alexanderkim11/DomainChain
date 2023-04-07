@@ -1,0 +1,56 @@
+{
+  "name": "DomainChain",
+  "engine": {
+      "authorityRound": {
+          "params": {
+              "stepDuration": "5",
+              "validators" : {
+                  "multi": {
+                          "0": { "list": [TODO] }
+                  },
+              }
+          }
+      }
+  },
+  "params": {
+      "networkID" : TODO,
+      "maximumExtraDataSize": "0x20",
+      "minGasLimit": TODO,
+      "transactionPermissionContract": TODO,
+      "eip140Transition": "0x0",
+      "eip211Transition": "0x0",
+      "eip214Transition": "0x0",
+      "eip658Transition": "0x0",
+      "eip145Transition": "0x0",
+      "eip1014Transition": "0x0",
+      "eip1052Transition": "0x0",
+      "eip1283Transition": "0x0",
+      "eip152Transition": "0x0",
+      "eip1108Transition": "0x0",
+      "eip1344Transition": "0x0",
+      "eip1706Transition": "0x0",
+      "eip1884Transition": "0x0",
+      "eip2028Transition": "0x0",
+      "eip2565Transition": "0x0",
+      "eip2929Transition": "0x0",
+      "eip2930Transition": "0x0",
+      "eip3198Transition": "0x0",
+      "eip3529Transition": "0x0",
+      "eip3541Transition": "0x0",
+      "eip1559Transition": "0x0",
+  },
+  "genesis": {
+    "seal": {
+      "authorityRound": {
+        "step": "0x0",
+        "signature": "0x0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+      }
+    },
+    "difficulty": "0x20000",
+    "gasLimit": "0x8000000"
+  },
+  "accounts": {
+    GENESIS_ACCOUNTS
+  }
+}
+

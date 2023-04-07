@@ -1,0 +1,27 @@
+#???????
+
+
+version: "3.5"
+services:
+
+    master_node:
+        image: nethermind/nethermind:1.10.17
+        command: --config config
+        container_name: node_1
+        volumes:
+            - ./genesis:/config/genesis
+            - ./master_node/configs/config.cfg:/nethermind/configs/config.cfg
+            - ./static-nodes.json:/nethermind/Data/static-nodes.json
+            - ./master_node/keystore:/nethermind/keystore
+        ports:
+            - 0.0.0.0:8547:8545
+        networks:
+            vpcbr:
+                ipv4_address: 10.5.0.2
+
+networks:
+    vpcbr:
+        driver: bridge
+        ipam:
+            config:
+                - subnet: 10.5.0.0/16

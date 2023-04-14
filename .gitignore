@@ -1,0 +1,4 @@
+#Ignore Nethermind executable files because they are too large for Github
+Nethermind.Cli
+Nethermind.Launcher
+Nethermind.Runner

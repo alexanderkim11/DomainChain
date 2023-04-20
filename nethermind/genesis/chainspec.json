@@ -5,15 +5,13 @@
           "params": {
               "stepDuration": "5",
               "validators" : {
-                  "multi": {
-                          "0": { "list": ["0x2b6e5ab3c81c1974483a8b8002f235b467630a09"] }
-                  }
+                  "list": ["INSERT VALIDATORS HERE"]
               }
           }
       }
   },
   "params": {
-      "networkID" : "TODO: ASK FOR PERMISSION / GENERATE NEW ID",
+      "networkID" : "INSERT NETWORK ID HERE",
       "maximumExtraDataSize": "0x20",
       "minGasLimit": "0x8000000",
       "eip140Transition": "0x0",
@@ -54,7 +52,7 @@
     "0x0000000000000000000000000000000000000002": { "balance": "1", "builtin": { "name": "sha256", "pricing": { "linear": { "base": 60, "word": 12 } } } },
     "0x0000000000000000000000000000000000000003": { "balance": "1", "builtin": { "name": "ripemd160", "pricing": { "linear": { "base": 600, "word": 120 } } } },
     "0x0000000000000000000000000000000000000004": { "balance": "1", "builtin": { "name": "identity", "pricing": { "linear": { "base": 15, "word": 3 } } } },
-    "0xc691f4adc31bf6f103cc0b87342fec1dfef8fa77": { "balance": "1000000000000000000000000000" }
+    "INSERT GENESIS ACCOUNT HERE": { "balance": "1000000000000000000000000000" }
   }
 }
 

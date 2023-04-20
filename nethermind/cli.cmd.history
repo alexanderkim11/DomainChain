@@ -1,0 +1,60 @@
+eth.blockNumber
+personal.listAccounts
+eth.getBalance("0x6f8bdfdc4448f1f000070f964717d43a61c7a329")
+eth.blockNumber
+eth.getBalance("0x6f8bdfdc4448f1f000070f964717d43a61c7a329")
+personal.listAccounts
+eth.blockNumber
+eth.getBalance(personal.listAccounts[1])
+personal.listAccounts
+eth.blockNumber
+eth.getBalance(personal.listAccounts[1])
+eth.blockNumber
+eth.sendWei(personal.listAccounts[1], personal.listAccounts[2], 100)
+eth.blockNumber
+admin.peers()
+parity.netPeers
+net.peerCount
+eth.blockNumber
+eth.sendWei(personal.listAccounts[1], personal.listAccounts[2], 100)
+eth.blockNumber
+eth.chainId
+eth.syncing(
+eth.syncing()
+eth.pendingTransactions
+eth.syncing
+eth.syncing(0
+eth.syncing()
+eth.pendingTransactions()
+eth.pendingTransactions
+eth.sendWei(personal.listAccounts[1], personal.listAccounts[2], 100)
+eth.sendWei(personal.listAccounts[1], personal.listAccounts[2], 100)
+eth.blockNumber
+eth.pendingTransactions
+eth.blockNumber
+eth.sendWei(personal.listAccounts[1], personal.listAccounts[2], 100)
+eth.blockNumber
+eth.pendingTransactions
+eth.blockNumber
+ls
+eth.sendWei(personal.listAccounts[1], personal.listAccounts[2], 100)
+eth.pendingTransactions
+eth.blockNumber
+eth.pendingTransactions
+eth.sendWei(personal.listAccounts[1], personal.listAccounts[2], 100)
+eth.blockNumber
+parity.netPeers
+eth.sendWei(personal.listAccounts[1], personal.listAccounts[2], 100)
+eth.blockNumber
+admin.addPeer(
+admin.addPeer()
+parity.netPeers
+
+parity.netPeers
+personal.listAccounts
+ls
+parity.netPeers
+personal.listAccounts
+parity.netPeers
+eth.sendEth(personal.listAccounts[1], "0xc691f4adc31bf6f103cc0b87342fec1dfef8fa77",5)
+parity.netPeers

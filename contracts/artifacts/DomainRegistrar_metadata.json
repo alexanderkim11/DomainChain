@@ -11,7 +11,92 @@
 				"type": "constructor"
 			},
 			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "domain",
+						"type": "address"
+					}
+				],
+				"name": "domainCreated",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "domain",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "ownershipTransfer",
+				"type": "event"
+			},
+			{
 				"inputs": [],
+				"name": "deployer",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "hostname",
+						"type": "string"
+					}
+				],
+				"name": "lookUp",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "hostname",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
+						"name": "ipaddress",
+						"type": "string"
+					},
+					{
+						"internalType": "bytes32",
+						"name": "publicKey",
+						"type": "bytes32"
+					},
+					{
+						"internalType": "string",
+						"name": "extraInfo",
+						"type": "string"
+					}
+				],
 				"name": "register",
 				"outputs": [
 					{
@@ -22,11 +107,71 @@
 				],
 				"stateMutability": "nonpayable",
 				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"name": "registry",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "bytes4",
+						"name": "interfaceId",
+						"type": "bytes4"
+					}
+				],
+				"name": "supportsInterface",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "hostname",
+						"type": "string"
+					},
+					{
+						"internalType": "address",
+						"name": "newOwner",
+						"type": "address"
+					}
+				],
+				"name": "transferOwnership",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
 			}
 		],
 		"devdoc": {
 			"kind": "dev",
-			"methods": {},
+			"methods": {
+				"supportsInterface(bytes4)": {
+					"details": "Returns true if this contract implements the interface defined by `interfaceId`. See the corresponding https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified[EIP section] to learn more about how these ids are created. This function call must use less than 30 000 gas."
+				}
+			},
 			"version": 1
 		},
 		"userdoc": {
@@ -51,12 +196,44 @@
 		"remappings": []
 	},
 	"sources": {
-		"DomainRegistrar.sol": {
-			"keccak256": "0x361ea60b545ac68dc1b19acd3b2618ec7fe91d23d98b6e2bed8908d33a581006",
+		"Domain.sol": {
+			"keccak256": "0x5ab0c76b286fb3950b931bb1a9b31c121f51d77f5e951ca5279c375f7da5c290",
 			"license": "Unlicensed",
 			"urls": [
-				"bzz-raw://8f90dd45651e444c6b79da7be3b8d8af4657f16077d0f5b801949712ee4b4ec0",
-				"dweb:/ipfs/QmUXyyw83ohkE55cyzw9nkJipybQaStbA9haPiVCL9ap1n"
+				"bzz-raw://9d48abe546531005365541492cbd65e8a8726320b4cf606827b805abada5a19d",
+				"dweb:/ipfs/QmawBEFh3JXz6JnbJ9jyybNWCnXbkx5h58zAokrk3pWrNY"
+			]
+		},
+		"DomainRegistrar.sol": {
+			"keccak256": "0xb4cf3b00cf65d769295889736052f10e07865341376324e0faf2da6af0c48fb8",
+			"license": "Unlicensed",
+			"urls": [
+				"bzz-raw://674dfad3d0e38983d1205f0d1900c9c430094308df256316ba99c01575d05221",
+				"dweb:/ipfs/QmdbE4bdsWXiSAjWbEnSsqUabiZi9BpxXMuBVZkKXEgRWE"
+			]
+		},
+		"IDomain.sol": {
+			"keccak256": "0x8d261d5262e76b100ce9567badbe2673af1c597799eaab280531bc091b205acc",
+			"license": "Unlicensed",
+			"urls": [
+				"bzz-raw://bc7a241b67a2fb6cdad7a923173d1ad41052c7c167efe3dc9e9e30104348791a",
+				"dweb:/ipfs/QmZEMVahEeKTZg4Bn5avCQwEGifuTBjPEio4P8i2Gdd1zJ"
+			]
+		},
+		"IDomainRegistrar.sol": {
+			"keccak256": "0x15ef7d2b623ba01d142c05aa8f12549ee763b09c5a2ca2175977d23b1a9d5b73",
+			"license": "Unlicensed",
+			"urls": [
+				"bzz-raw://dad643dbeeb1f46ffd8123f0f369821138e9405e28b84d6c12179152c2e0197b",
+				"dweb:/ipfs/QmZnsCkTqdFUagKHC1Pr4Z2jiBDo2SuTyMag3iXAGDHS3b"
+			]
+		},
+		"IERC165.sol": {
+			"keccak256": "0x3213cb47aba4f8ba951dc5671d44e3559fecec1e9c402e679fbb5ada255fdff1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://fc2296c533793e4c2a6eb4909bd2ca8e99044aff82e3fe2049092bd3f62034a3",
+				"dweb:/ipfs/QmVwAULUUqeXLdggzzW1C3hdNUZbqHoCskoGyfzZ5EKcwW"
 			]
 		}
 	},

@@ -15,6 +15,7 @@ contract TransactionPermissions {
 
     constructor() {
         deployer = msg.sender;
+        approve(msg.sender, All);
     }
 
     function allowedTxTypes(address sender) public view returns (uint32)
@@ -48,3 +49,6 @@ contract TransactionPermissions {
         approvedAddresses[approved] = permissions;
     }
 }
+
+
+

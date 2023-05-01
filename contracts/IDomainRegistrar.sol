@@ -2,16 +2,22 @@
 
 pragma solidity ^0.8.18;
 
-interface IDomainRegistrar {
+import "./IERC165.sol";
+
+interface IDomainRegistrar is IERC165 {
     //------------------------------------------------------------
     
     function registry(bytes32 hostname_hash) external returns (address);
+
+    function deployer() external returns (address);
 
     //------------------------------------------------------------
 
     function register(string memory hostname, string memory server_ipaddress, bytes32 publicKey, string memory extraInfo) external returns (address);
 
-    function transferOwnership(string memory hostname, address newOwner) external returns (bool);
+    function transferOwnership(string memory hostname, address newOwner) external;
+
+    function lookUp(string memory hostname) external returns (address);
 
     //------------------------------------------------------------
     // Events to emit
@@ -22,6 +28,11 @@ interface IDomainRegistrar {
     event domainCreated(address domain);
 
     event ownershipTransfer(address domain, address newOwner);
+
+    //------------------------------------------------------------
+
+    function supportsInterface(bytes4 interfaceId) external view returns (bool);
+
 }
 
 // Returns true if the passed address is a member of this DAO, false

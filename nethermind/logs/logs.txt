@@ -1,0 +1,75 @@
+2023-04-29 17:05:33.1697|ERROR|1|Error while loading Chainspec. Falling back to loading from file. System.IO.FileNotFoundException: Chainspec file does not exist /home/jyounga/DomainChain/nethermind/INSERT PATH TO CHAINSPEC.JSON
+Did you mean any of these:
+
+   at Nethermind.Specs.ChainSpecStyle.ChainSpecLoaderExtensions.LoadFromFile(IChainSpecLoader chainSpecLoader, String filePath, ILogger logger)
+   at Nethermind.Specs.ChainSpecStyle.ChainSpecLoaderExtensions.LoadEmbeddedOrFromFile(IChainSpecLoader chainSpecLoader, String fileName, ILogger logger)
+2023-04-29 17:05:33.2580|ERROR|1|Failure System.IO.FileNotFoundException: Chainspec file does not exist /home/jyounga/DomainChain/nethermind/INSERT PATH TO CHAINSPEC.JSON
+Did you mean any of these:
+
+   at Nethermind.Specs.ChainSpecStyle.ChainSpecLoaderExtensions.LoadFromFile(IChainSpecLoader chainSpecLoader, String filePath, ILogger logger)
+   at Nethermind.Specs.ChainSpecStyle.ChainSpecLoaderExtensions.LoadEmbeddedOrFromFile(IChainSpecLoader chainSpecLoader, String fileName, ILogger logger)
+   at Nethermind.Runner.Ethereum.Api.ApiBuilder.LoadChainSpec(IJsonSerializer ethereumJsonSerializer)
+   at Nethermind.Runner.Ethereum.Api.ApiBuilder.Create(IEnumerable`1 consensusPlugins)
+   at Nethermind.Runner.Program.<>c__DisplayClass10_0.<<Run>b__1>d.MoveNext()
+2023-04-29 17:29:03.4599|INFO|1|Did not find chainspec in embedded resources: INSERT PATH TO CHAINSPEC.JSON 
+2023-04-29 17:29:03.4599|ERROR|1|Error while loading Chainspec. Falling back to loading from file. System.IO.FileNotFoundException: Chainspec file does not exist /home/jyounga/DomainChain/nethermind/INSERT PATH TO CHAINSPEC.JSON
+Did you mean any of these:
+
+   at Nethermind.Specs.ChainSpecStyle.ChainSpecLoaderExtensions.LoadFromFile(IChainSpecLoader chainSpecLoader, String filePath, ILogger logger)
+   at Nethermind.Specs.ChainSpecStyle.ChainSpecLoaderExtensions.LoadEmbeddedOrFromFile(IChainSpecLoader chainSpecLoader, String fileName, ILogger logger)
+2023-04-29 17:29:03.4740|ERROR|1|Failure System.IO.FileNotFoundException: Chainspec file does not exist /home/jyounga/DomainChain/nethermind/INSERT PATH TO CHAINSPEC.JSON
+Did you mean any of these:
+
+   at Nethermind.Specs.ChainSpecStyle.ChainSpecLoaderExtensions.LoadFromFile(IChainSpecLoader chainSpecLoader, String filePath, ILogger logger)
+   at Nethermind.Specs.ChainSpecStyle.ChainSpecLoaderExtensions.LoadEmbeddedOrFromFile(IChainSpecLoader chainSpecLoader, String fileName, ILogger logger)
+   at Nethermind.Runner.Ethereum.Api.ApiBuilder.LoadChainSpec(IJsonSerializer ethereumJsonSerializer)
+   at Nethermind.Runner.Ethereum.Api.ApiBuilder.Create(IEnumerable`1 consensusPlugins)
+   at Nethermind.Runner.Program.<>c__DisplayClass10_0.<<Run>b__1>d.MoveNext()
+2023-04-29 18:35:06.0690|ERROR|1|Error while loading Chainspec. Falling back to loading from file. System.IO.InvalidDataException: Error when loading chainspec (After parsing a value an unexpected character was encountered: ". Path 'params.eip1559Transition', line 38, position 6.)
+ ---> Newtonsoft.Json.JsonReaderException: After parsing a value an unexpected character was encountered: ". Path 'params.eip1559Transition', line 38, position 6.
+   at Newtonsoft.Json.JsonTextReader.ParsePostValue(Boolean ignoreComments)
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize[T](JsonReader reader)
+   at Nethermind.Serialization.Json.EthereumJsonSerializer.Deserialize[T](TextReader reader)
+   at Nethermind.Serialization.Json.EthereumJsonSerializer.Deserialize[T](String json)
+   at Nethermind.Specs.ChainSpecStyle.ChainSpecLoader.Load(String jsonData)
+   --- End of inner exception stack trace ---
+   at Nethermind.Specs.ChainSpecStyle.ChainSpecLoader.Load(String jsonData)
+   at Nethermind.Specs.ChainSpecStyle.ChainSpecLoaderExtensions.LoadFromFile(IChainSpecLoader chainSpecLoader, String filePath, ILogger logger)
+   at Nethermind.Specs.ChainSpecStyle.ChainSpecLoaderExtensions.LoadEmbeddedOrFromFile(IChainSpecLoader chainSpecLoader, String fileName, ILogger logger)
+2023-04-29 18:35:06.0830|INFO|1|Loading chainspec from file: /home/jyounga/DomainChain/nethermind/genesis/chainspec_full.json 
+2023-04-29 18:35:06.0830|ERROR|1|Failure System.IO.InvalidDataException: Error when loading chainspec (After parsing a value an unexpected character was encountered: ". Path 'params.eip1559Transition', line 38, position 6.)
+ ---> Newtonsoft.Json.JsonReaderException: After parsing a value an unexpected character was encountered: ". Path 'params.eip1559Transition', line 38, position 6.
+   at Newtonsoft.Json.JsonTextReader.ParsePostValue(Boolean ignoreComments)
+   at Newtonsoft.Json.JsonTextReader.Read()
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.SetPropertyValue(JsonProperty property, JsonConverter propertyConverter, JsonContainerContract containerContract, JsonProperty containerProperty, JsonReader reader, Object target)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.PopulateObject(Object newObject, JsonReader reader, JsonObjectContract contract, JsonProperty member, String id)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize[T](JsonReader reader)
+   at Nethermind.Serialization.Json.EthereumJsonSerializer.Deserialize[T](TextReader reader)
+   at Nethermind.Serialization.Json.EthereumJsonSerializer.Deserialize[T](String json)
+   at Nethermind.Specs.ChainSpecStyle.ChainSpecLoader.Load(String jsonData)
+   --- End of inner exception stack trace ---
+   at Nethermind.Specs.ChainSpecStyle.ChainSpecLoader.Load(String jsonData)
+   at Nethermind.Specs.ChainSpecStyle.ChainSpecLoaderExtensions.LoadFromFile(IChainSpecLoader chainSpecLoader, String filePath, ILogger logger)
+   at Nethermind.Specs.ChainSpecStyle.ChainSpecLoaderExtensions.LoadEmbeddedOrFromFile(IChainSpecLoader chainSpecLoader, String fileName, ILogger logger)
+   at Nethermind.Runner.Ethereum.Api.ApiBuilder.LoadChainSpec(IJsonSerializer ethereumJsonSerializer)
+   at Nethermind.Runner.Ethereum.Api.ApiBuilder.Create(IEnumerable`1 consensusPlugins)
+   at Nethermind.Runner.Program.<>c__DisplayClass10_0.<<Run>b__1>d.MoveNext()

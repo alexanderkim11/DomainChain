@@ -96,11 +96,11 @@
 	},
 	"sources": {
 		"TxPermissions.sol": {
-			"keccak256": "0xa517311ca1d022385d6792a36a80134e8eb06f546cb5cbac746f79e562b1da74",
+			"keccak256": "0x4de0729ca84f9fe29c346bcdbe64b097e61ec0d4af16dfe30e025ec83d1457d4",
 			"license": "Unlicensed",
 			"urls": [
-				"bzz-raw://681e909475d7368f0d033f6b4378855af6fa1ada019fdf763ea88cbed5594b87",
-				"dweb:/ipfs/QmSt2JS1MQFrKKrs7XjDhpQxQPP7C3YZHM9H3tFehVRF69"
+				"bzz-raw://1b3878366ed136beb5804b00985d7e39fbda589b2d077edc0cbe07587293d790",
+				"dweb:/ipfs/QmXM3aH8kQs6DTPCTJ9TWpM45EtUkKFTXuQ5a49rDegHoU"
 			]
 		}
 	},

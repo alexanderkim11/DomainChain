@@ -38,6 +38,38 @@
 				"type": "event"
 			},
 			{
+				"inputs": [],
+				"name": "deployer",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "hostname",
+						"type": "string"
+					}
+				],
+				"name": "lookUp",
+				"outputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "string",
@@ -93,6 +125,25 @@
 			{
 				"inputs": [
 					{
+						"internalType": "bytes4",
+						"name": "interfaceId",
+						"type": "bytes4"
+					}
+				],
+				"name": "supportsInterface",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
 						"internalType": "string",
 						"name": "hostname",
 						"type": "string"
@@ -104,20 +155,18 @@
 					}
 				],
 				"name": "transferOwnership",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
+				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
 			}
 		],
 		"devdoc": {
 			"kind": "dev",
-			"methods": {},
+			"methods": {
+				"supportsInterface(bytes4)": {
+					"details": "Returns true if this contract implements the interface defined by `interfaceId`. See the corresponding https://eips.ethereum.org/EIPS/eip-165#how-interfaces-are-identified[EIP section] to learn more about how these ids are created. This function call must use less than 30 000 gas."
+				}
+			},
 			"version": 1
 		},
 		"userdoc": {
@@ -143,11 +192,19 @@
 	},
 	"sources": {
 		"IDomainRegistrar.sol": {
-			"keccak256": "0xb9f171ecf08ffe71f0d56e782bbcc3ad311b90cfa77589f07250e1f49f83c975",
+			"keccak256": "0x15ef7d2b623ba01d142c05aa8f12549ee763b09c5a2ca2175977d23b1a9d5b73",
 			"license": "Unlicensed",
 			"urls": [
-				"bzz-raw://2bc1d105826428d29c63a5c4fb6c933c5e5878c516938435f174f9879c3bf737",
-				"dweb:/ipfs/QmRFk6UqfZJvknugdB1eS34tB62pBmK4ijm5WQecTnCJtg"
+				"bzz-raw://dad643dbeeb1f46ffd8123f0f369821138e9405e28b84d6c12179152c2e0197b",
+				"dweb:/ipfs/QmZnsCkTqdFUagKHC1Pr4Z2jiBDo2SuTyMag3iXAGDHS3b"
+			]
+		},
+		"IERC165.sol": {
+			"keccak256": "0x3213cb47aba4f8ba951dc5671d44e3559fecec1e9c402e679fbb5ada255fdff1",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://fc2296c533793e4c2a6eb4909bd2ca8e99044aff82e3fe2049092bd3f62034a3",
+				"dweb:/ipfs/QmVwAULUUqeXLdggzzW1C3hdNUZbqHoCskoGyfzZ5EKcwW"
 			]
 		}
 	},

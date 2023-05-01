@@ -58,3 +58,14 @@ personal.listAccounts
 parity.netPeers
 eth.sendEth(personal.listAccounts[1], "0xc691f4adc31bf6f103cc0b87342fec1dfef8fa77",5)
 parity.netPeers
+eth.blockNumber
+personal.listAccounts
+eth.blockNumber
+eth.sendEth(personal.listAccounts[2], personal.listAccounts[0],20)
+eth.blockNumber
+eth.sendEth(personal.listAccounts[2], personal.listAccounts[0],1)
+eth.blockNumber
+eth.sendEth(personal.listAccounts[2], personal.listAccounts[0],1)
+eth.blockNumber
+eth.sendEth(personal.listAccounts[0], personal.listAccounts[2],1)
+eth.sendEth(personal.listAccounts[0], personal.listAccounts[2],1)

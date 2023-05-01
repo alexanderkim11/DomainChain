@@ -49,8 +49,11 @@
 		},
 		"gasEstimates": null,
 		"methodIdentifiers": {
+			"deployer()": "d5f39488",
+			"lookUp(string)": "a6678177",
 			"register(string,string,bytes32,string)": "fd3d1fc4",
 			"registry(bytes32)": "7ef50298",
+			"supportsInterface(bytes4)": "01ffc9a7",
 			"transferOwnership(string,address)": "c0e793c2"
 		}
 	},
@@ -86,6 +89,38 @@
 			],
 			"name": "ownershipTransfer",
 			"type": "event"
+		},
+		{
+			"inputs": [],
+			"name": "deployer",
+			"outputs": [
+				{
+					"internalType": "address",
+					"name": "",
+					"type": "address"
+				}
+			],
+			"stateMutability": "nonpayable",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
+					"internalType": "string",
+					"name": "hostname",
+					"type": "string"
+				}
+			],
+			"name": "lookUp",
+			"outputs": [
+				{
+					"internalType": "address",
+					"name": "",
+					"type": "address"
+				}
+			],
+			"stateMutability": "nonpayable",
+			"type": "function"
 		},
 		{
 			"inputs": [
@@ -143,6 +178,25 @@
 		{
 			"inputs": [
 				{
+					"internalType": "bytes4",
+					"name": "interfaceId",
+					"type": "bytes4"
+				}
+			],
+			"name": "supportsInterface",
+			"outputs": [
+				{
+					"internalType": "bool",
+					"name": "",
+					"type": "bool"
+				}
+			],
+			"stateMutability": "view",
+			"type": "function"
+		},
+		{
+			"inputs": [
+				{
 					"internalType": "string",
 					"name": "hostname",
 					"type": "string"
@@ -154,13 +208,7 @@
 				}
 			],
 			"name": "transferOwnership",
-			"outputs": [
-				{
-					"internalType": "bool",
-					"name": "",
-					"type": "bool"
-				}
-			],
+			"outputs": [],
 			"stateMutability": "nonpayable",
 			"type": "function"
 		}

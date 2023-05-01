@@ -2,7 +2,9 @@
 
 pragma solidity ^0.8.18;
 
-interface IDomain {
+import "./IERC165.sol";
+
+interface IDomain is IERC165 {
 
     // The following six methods are done for you automatically -- as long as
     // you make the appropriate variable public, then Solidity will create
@@ -21,4 +23,8 @@ interface IDomain {
     function extraInfo() external returns (string memory);
 
     function isActive() external returns (bool);
+
+    function transferOwnership(address newOwner) external;
+
+    function supportsInterface(bytes4 interfaceId) external view returns (bool);
 }

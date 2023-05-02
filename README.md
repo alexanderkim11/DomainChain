@@ -1,8 +1,6 @@
 # DomainChain
-Ethereum-based Alternative for Domain Name Service (DNS), built on Nethermind
-
-Cryptocurrency Course Staff Repo
 ================================
+Ethereum-based Alternative for Domain Name Service (DNS), built on Nethermind
 
 
 

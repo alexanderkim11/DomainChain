@@ -1,5 +1,5 @@
 # Description
-This folder contains the various Solidity interfaces used in DomainChain, as well as some sample contract implementations of those interfaces.
+This folder contains the various Solidity interfaces used in DomainChain, some sample contract implementations of those interfaces, and some remaining miscellaneous files.
 
 # Contents
 - ## Interfaces

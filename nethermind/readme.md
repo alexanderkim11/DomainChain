@@ -13,6 +13,6 @@ This section will focus on getting setup to run this system.
   
   ## Configuration Files
   There are a number of different files in the <code>/nethermind</code> folder that provided opportunities to configure the blockchain to your individual needs.
-  ### <code>chainspec.json</code>
+    ### <code>chainspec.json</code>
 
 # Contents

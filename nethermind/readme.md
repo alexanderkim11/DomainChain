@@ -12,7 +12,9 @@ This section will focus on getting setup to run this system.
   Due to the size of executables used by the Nethermind client, they were not included into this repository.  However, you can download them from [here](https://downloads.nethermind.io/).  The three executables you will need are <code>Nethermind.Runner</code>, <code>Nethermind.Launcher</code>, and <code>Nethermind.Cli</code>.  Once downloaded, move them into the /nethermind folder of your clone of the DomainChain repository.
   
   ## Configuration Files
-  There are a number of different files in the <code>/nethermind</code> folder that provided opportunities to configure the blockchain to your individual needs.
-    ### <code>chainspec.json</code>
+  There are a number of different files in the <code>/nethermind</code> folder that will need to be edited to configure the blockchain to your individual needs.
+  ### [<code>chainspec.json</code>](genesis/chainspec.json)
+  ### [<code>config.cfg</code>](configs/config.cfg)
+  ### [<code>static-nodes.json</code>](data/static-nodes.json)
 
 # Contents

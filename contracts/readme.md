@@ -7,9 +7,9 @@ This folder contains the various Solidity interfaces used in DomainChain, as wel
   - [**IDomain.sol**](IDomain.sol): Template for an individual domain contract
 - ## Contract Implementations
   - [**DomainRegistrar.sol**](DomainRegistrar.sol): Implementation of the IDomainRegistrar interface
-  - [**Domain.sol**](Domain.sol): Implementation of the IDomain interfaces
+  - [**Domain.sol**](Domain.sol): Implementation of the IDomain interface
 - ## Miscellaneous Files
-  - [**TxPermissions.sol**](TxPermissions.sol): Permissioning contract used by the Authority Round consensus protocol to regulate which accounts/contract can publish transactions
+  - [**TxPermissions.sol**](TxPermissions.sol): Permissioning contract used by the Authority Round consensus protocol to regulate which accounts and contracts can publish transactions
   - [**IERC165.sol**](Domain.sol):  Implementation of EIP-165, as outlined [here](https://eips.ethereum.org/EIPS/eip-165)
 
 

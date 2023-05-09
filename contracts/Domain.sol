@@ -4,12 +4,8 @@ pragma solidity ^0.8.18;
 
 import "./IDomain.sol";
 
+//See associated IDomain interface for documentation
 contract Domain is IDomain {
-
-    // The following six methods are done for you automatically -- as long as
-    // you make the appropriate variable public, then Solidity will create
-    // the getter function for you
-
     address public override registrar;
     string public override hostname;
     string public override ipaddress;

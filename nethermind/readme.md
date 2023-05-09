@@ -32,7 +32,7 @@ This section will focus on getting setup to run this system.
 # Repository Contents
   - [<code>/configs</code>](configs): Contains the configuration file for your local node
   - [<code>/data</code>](data): Contains the static-nodes file used for static connections to known network nodes
-  - [<code>/database</code>](database): Contains various stored information about the network.  The size of this folder will grow each time you sync to the network and download new information.
+  - <code>/database</code> (not included): Contains various stored information about the network.  The size of this folder will grow each time you sync to the network and download new information.
   - [<code>/genesis</code>](genesis): Contains the chainspec.json file, also known as the genesis file, that initialized the chain you want to connect to.
   - <code>/keystore</code> (not included): Contains all of the <code>.keystore</code> files for the accounts on your local node.
   - <code>/logs</code> (not included): Contains log files for monitoring and debugging your local node

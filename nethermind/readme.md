@@ -3,7 +3,7 @@ Nethermind is a high-performance, highly configurable full Ethereum protocol exe
 
 Note that this write-up will primarily focus on the files contained in this repository, as well as the specific steps need to compile and execute said files.  For more robust information on the Nethermind client as a whole, please see the official Nethermind repository and documentation.
 
-[Official Nethermind Github] (https://github.com/NethermindEth/nethermind)
+[Official Nethermind Github](https://github.com/NethermindEth/nethermind)
 
 
 # Setup

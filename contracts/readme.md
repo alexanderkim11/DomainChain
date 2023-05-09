@@ -3,10 +3,13 @@ This folder contains the various Solidity interfaces used in DomainChain, as wel
 
 # Contents
 - ## Interfaces
-- [*
-- [**test.sol**](test.sol): tester
-- [/contracts](contracts): Contains all Solidity contracts used to implement and regulate DomainChain.  See folder for more details
-- [/nethermind](nethermind): Contains most files (except executables) needed to run an Ethereum node from the Nethermind Client.  See folder for more details.
-
+  - [**IDomainRegistrar.sol**](IDomainRegistrar.sol): Template for the repository that maps hostnames to associated Domain contracts
+  - [**IDomain.sol**](IDomain.sol): Template for an individual domain contract
+- ## Contract Implementations
+  - [**DomainRegistrar.sol**](DomainRegistrar.sol): Implementation of the IDomainRegistrar interface
+  - [**Domain.sol**](Domain.sol): Implementation of the IDomain interfaces
+- ## Miscellaneous Files
+  - [**TxPermissions.sol**](TxPermissions.sol): Permissioning contract used by the Authority Round consensus protocol to regulate which accounts/contract can publish transactions
+  - [**IERC165.sol**](Domain.sol):  Implementation of EIP-165, as outlined [here](https://eips.ethereum.org/EIPS/eip-165)
 
 

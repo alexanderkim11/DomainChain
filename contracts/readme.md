@@ -2,7 +2,7 @@
 This folder contains the various Solidity interfaces used in DomainChain, as well as some sample contract implementations of those interfaces.
 
 # Contents
-## Interfaces
+- ## Interfaces
 - [*
 - [**test.sol**](test.sol): tester
 - [/contracts](contracts): Contains all Solidity contracts used to implement and regulate DomainChain.  See folder for more details

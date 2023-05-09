@@ -9,7 +9,7 @@ Note that this write-up will primarily focus on the files contained in this repo
 # Setup
 This section will focus on getting setup to run this system.
   ## 1. Executables
-  Due to the size of executables used by the Nethermind client, they were not included into this repository.  However, you can download them from [here](https://downloads.nethermind.io/).  The three executables you will need are <code>Nethermind.Runner</code>, <code>Nethermind.Launcher</code>, and <code>Nethermind.Cli</code>.  Once downloaded, move them into the /nethermind folder of your clone of the DomainChain repository.
+  Due to the size of executables used by the Nethermind client, they were not included into this repository.  However, you can download them from [here](https://downloads.nethermind.io/).  The three executables you will need are <code>Nethermind.Runner</code>, <code>Nethermind.Launcher</code>, and <code>Nethermind.Cli</code>.  Once downloaded, move them into the [<code>/nethermind</code>] folder of your clone of the DomainChain repository.
   
   ## 2. Configuration Files
   There are a number of different files in the <code>/nethermind</code> folder that will need to be edited to configure the blockchain to your individual needs.
@@ -32,10 +32,10 @@ This section will focus on getting setup to run this system.
 # Repository Contents
   - [<code>/configs</code>](configs): Contains the configuration file for your local node
   - [<code>/data</code>](data): Contains the static-nodes file used for static connections to known network nodes
-  - [<code>/configs</code>](configs): Contains various stored information about the network.  The size of this folder will grow each time you sync to the network and download new information.
+  - [<code>/database</code>](database): Contains various stored information about the network.  The size of this folder will grow each time you sync to the network and download new information.
   - [<code>/genesis</code>](genesis): Contains the chainspec.json file, also known as the genesis file, that initialized the chain you want to connect to.
-  - <code>/keystore</code> (not shown): Contains all of the <code>.keystore</code> files for the accounts on your local node.
-  - <code>/logs</code> (not shown): Contains log files for monitoring and debugging your local node
+  - <code>/keystore</code> (not included): Contains all of the <code>.keystore</code> files for the accounts on your local node.
+  - <code>/logs</code> (not included): Contains log files for monitoring and debugging your local node
   - [<code>/plugins</code>](plugins): Contains various plugin files needed by the Nethermind client
   
   

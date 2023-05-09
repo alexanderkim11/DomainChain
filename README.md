@@ -7,7 +7,7 @@ Ethereum-based Alternative for Domain Name Service (DNS), built on Nethermind
 
 # Setup
 - Nethermind Node: See [this](nethermind/setup.md)
-- Remix: Not necessary, but the standard IDE for all Solidity contracts [(Website)](https://remix.run/)
+- Remix: Not necessary, but the standard IDE for all Solidity contracts [(Website)](https://remix-project.org/)
 
 # Description
 TODO

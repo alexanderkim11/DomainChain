@@ -69,3 +69,6 @@ eth.sendEth(personal.listAccounts[2], personal.listAccounts[0],1)
 eth.blockNumber
 eth.sendEth(personal.listAccounts[0], personal.listAccounts[2],1)
 eth.sendEth(personal.listAccounts[0], personal.listAccounts[2],1)
+parity.netPeers
+eth.pendingTransactions
+eth.blockNumber

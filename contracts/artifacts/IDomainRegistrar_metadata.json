@@ -104,6 +104,19 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "registrar_name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "bytes32",
@@ -192,11 +205,11 @@
 	},
 	"sources": {
 		"IDomainRegistrar.sol": {
-			"keccak256": "0x15ef7d2b623ba01d142c05aa8f12549ee763b09c5a2ca2175977d23b1a9d5b73",
+			"keccak256": "0xf1f725bfa5d91c25beba56e878c5dd8586645f2486e94f9d6f0aaa13c23a6dd6",
 			"license": "Unlicensed",
 			"urls": [
-				"bzz-raw://dad643dbeeb1f46ffd8123f0f369821138e9405e28b84d6c12179152c2e0197b",
-				"dweb:/ipfs/QmZnsCkTqdFUagKHC1Pr4Z2jiBDo2SuTyMag3iXAGDHS3b"
+				"bzz-raw://13d3464c4d5a080a62c211dca0d806404bd29c1397012913c5a457e32fb16fd1",
+				"dweb:/ipfs/QmWBHJgGY7pFiDpyU4i3xbEgtk8uBQRmEtLvCLNQkHeda5"
 			]
 		},
 		"IERC165.sol": {

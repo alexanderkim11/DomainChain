@@ -18,7 +18,7 @@ contract Domain is IDomain {
     string public override extraInfo;
     bool public override isActive;
 
-    constructor(address _owner, string memory _hostname, string memory _ipaddress, bytes32 _publicKey, string memory _extraInfo){
+    constructor(address _owner, string memory _hostname, string memory _ipaddress, address _publicKey, string memory _extraInfo){
         registrar = msg.sender;
         hostname = _hostname;
         ipaddress = _ipaddress;

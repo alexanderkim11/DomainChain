@@ -5,16 +5,18 @@ pragma solidity ^0.8.18;
 import "./IDomainRegistrar.sol";
 import "./Domain.sol";
 
-
+//See corresponding IDomainRegistrar.sol interface for function documentation
 contract DomainRegistrar is IDomainRegistrar{
     address public override deployer;
+    string public override registrar_name;
     mapping(bytes32 => address) public override registry;
 
-    constructor()  {
+    constructor(string memory _registrar_name)  {
         deployer = msg.sender;
+        registrar_name = _registrar_name;
     }
 
-    function register(string memory hostname, string memory ipaddress, bytes32 publicKey, string memory extraInfo) public override returns (address) {
+    function register(string memory hostname, string memory ipaddress, address publicKey, string memory extraInfo) public override returns (address) {
         //Deploy Domain.sol contract accordingly.
         bytes32 hostname_hash = keccak256(abi.encodePacked(hostname));
         require(registry[hostname_hash] == address(0), "Domain name has already been registered");

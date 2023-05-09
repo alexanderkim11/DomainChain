@@ -6,7 +6,13 @@
 	"output": {
 		"abi": [
 			{
-				"inputs": [],
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_registrar_name",
+						"type": "string"
+					}
+				],
 				"stateMutability": "nonpayable",
 				"type": "constructor"
 			},
@@ -109,6 +115,19 @@
 				"type": "function"
 			},
 			{
+				"inputs": [],
+				"name": "registrar_name",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "bytes32",
@@ -205,11 +224,11 @@
 			]
 		},
 		"DomainRegistrar.sol": {
-			"keccak256": "0xb4cf3b00cf65d769295889736052f10e07865341376324e0faf2da6af0c48fb8",
+			"keccak256": "0xf67410921e632b98fbf117974c051df16108eb8dcaa6edc0f45a33ea56a81bc0",
 			"license": "Unlicensed",
 			"urls": [
-				"bzz-raw://674dfad3d0e38983d1205f0d1900c9c430094308df256316ba99c01575d05221",
-				"dweb:/ipfs/QmdbE4bdsWXiSAjWbEnSsqUabiZi9BpxXMuBVZkKXEgRWE"
+				"bzz-raw://58b42cc7bd903c10bb131d3ec024a01c22b33306d38ba99849addd7e2eee8166",
+				"dweb:/ipfs/QmPhTPKNiGjBqfFNBxoKEwhMaizLa4WmVFPKcsBK2p3of2"
 			]
 		},
 		"IDomain.sol": {
@@ -221,11 +240,11 @@
 			]
 		},
 		"IDomainRegistrar.sol": {
-			"keccak256": "0x15ef7d2b623ba01d142c05aa8f12549ee763b09c5a2ca2175977d23b1a9d5b73",
+			"keccak256": "0xf1f725bfa5d91c25beba56e878c5dd8586645f2486e94f9d6f0aaa13c23a6dd6",
 			"license": "Unlicensed",
 			"urls": [
-				"bzz-raw://dad643dbeeb1f46ffd8123f0f369821138e9405e28b84d6c12179152c2e0197b",
-				"dweb:/ipfs/QmZnsCkTqdFUagKHC1Pr4Z2jiBDo2SuTyMag3iXAGDHS3b"
+				"bzz-raw://13d3464c4d5a080a62c211dca0d806404bd29c1397012913c5a457e32fb16fd1",
+				"dweb:/ipfs/QmWBHJgGY7pFiDpyU4i3xbEgtk8uBQRmEtLvCLNQkHeda5"
 			]
 		},
 		"IERC165.sol": {

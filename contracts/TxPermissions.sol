@@ -23,6 +23,7 @@ contract TransactionPermissions {
         return approvedAddresses[sender];
     }
 
+    //Function to allow deployer of this contract to change permissions for all users
     function setPermissions(address approved, bool all, bool basic, bool call, bool create, bool priv) public {
         require(msg.sender == deployer, "Only the admin can call this function");
         if (all == true){
@@ -45,6 +46,7 @@ contract TransactionPermissions {
         }
     }
 
+    //Internal function to add to approvedAddresses[] mapping
     function approve(address approved, uint32 permissions) internal {
         approvedAddresses[approved] = permissions;
     }

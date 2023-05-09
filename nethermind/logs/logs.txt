@@ -73,3 +73,11 @@ Did you mean any of these:
    at Nethermind.Runner.Ethereum.Api.ApiBuilder.LoadChainSpec(IJsonSerializer ethereumJsonSerializer)
    at Nethermind.Runner.Ethereum.Api.ApiBuilder.Create(IEnumerable`1 consensusPlugins)
    at Nethermind.Runner.Program.<>c__DisplayClass10_0.<<Run>b__1>d.MoveNext()
+2023-05-02 14:17:24.0485|ERROR|1|Failure System.IO.FileNotFoundException: Chainspec file does not exist /home/jyounga/DomainChain/nethermind/INSERT PATH TO CHAINSPEC.JSON
+Did you mean any of these:
+
+   at Nethermind.Specs.ChainSpecStyle.ChainSpecLoaderExtensions.LoadFromFile(IChainSpecLoader chainSpecLoader, String filePath, ILogger logger)
+   at Nethermind.Specs.ChainSpecStyle.ChainSpecLoaderExtensions.LoadEmbeddedOrFromFile(IChainSpecLoader chainSpecLoader, String fileName, ILogger logger)
+   at Nethermind.Runner.Ethereum.Api.ApiBuilder.LoadChainSpec(IJsonSerializer ethereumJsonSerializer)
+   at Nethermind.Runner.Ethereum.Api.ApiBuilder.Create(IEnumerable`1 consensusPlugins)
+   at Nethermind.Runner.Program.<>c__DisplayClass10_0.<<Run>b__1>d.MoveNext()

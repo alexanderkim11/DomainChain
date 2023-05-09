@@ -9,7 +9,7 @@ Note that this write-up will primarily focus on the files contained in this repo
 # Setup
 This section will focus on getting setup to run this system.
   ## 1. Executables
-  Due to the size of executables used by the Nethermind client, they were not included into this repository.  However, you can download them from [here](https://downloads.nethermind.io/).  The three executables you will need are <code>Nethermind.Runner</code>, <code>Nethermind.Launcher</code>, and <code>Nethermind.Cli</code>.  Once downloaded, move them into the [<code>/nethermind</code>] folder of your clone of the DomainChain repository.
+  Due to the size of executables used by the Nethermind client, they were not included into this repository.  However, you can download them from [here](https://downloads.nethermind.io/).  The three executables you will need are <code>Nethermind.Runner</code>, <code>Nethermind.Launcher</code>, and <code>Nethermind.Cli</code>.  Once downloaded, move them into the <code>/nethermind</code> folder of your clone of the DomainChain repository.
   
   ## 2. Configuration Files
   There are a number of different files in the <code>/nethermind</code> folder that will need to be edited to configure the blockchain to your individual needs.

@@ -1,14 +1,15 @@
 # DomainChain
 Ethereum-based Alternative for Domain Name Service (DNS), built on Nethermind
 
+# Contents
+- [/contracts](contracts): Contains all Solidity contracts used to implement and regulate DomainChain.  See folder for more details
+- -[/nethermind](nethermind): Contains most files (except executables) needed to run an Ethereum node from the Nethermind Client.  See folder for more details.
 
+# Setup
+- Nethermind Node: See [this](nethermind/setup.md)
+- Remix: Not necessary, but the standard IDE for all Solidity contracts [Remix](https://remix.run/)
 
-- [Homeworks](hws/readme.html) ([md](hws/readme.md)) that are in development
-- [Collab home page](collab/home.html) ([md](collab/home.md)); run `make` in that directory to create the .html version
-- [Ethereum blockchain explorer](explorer/readme.html) ([md](explorer/readme.md))
-- [Upcoming slide sets](slides/readme.html) ([md](slides/readme.md))
-- [Gradescope auto-grader](gradescope/readme.html) ([md](gradescope/readme.md))
-
-To run the auto-formatter: run `npm install` and then you can call the autoformatter on every `.sol` file in the repo with `npm run format`. The `.prettierrc.json` file is there to prevent the autoformatter from turning functions/function calls into a bunch of wrapped lines by manually extending the maximum possible line length.
+# Description
+TODO
 
 

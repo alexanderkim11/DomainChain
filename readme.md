@@ -6,7 +6,7 @@ Ethereum-based Alternative for Domain Name Service (DNS), built on Nethermind
 - [/nethermind](nethermind): Contains most files (except executables) needed to run an Ethereum node from the Nethermind Client.  See folder for more details.
 
 # Setup
-- Nethermind Node: See [this](nethermind/setup.md)
+- Nethermind Node: See [here](nethermind/setup.md)
 - Remix: Not necessary, but the standard IDE for all Solidity contracts [(Website)](https://remix-project.org/)
 
 # Description

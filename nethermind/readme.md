@@ -14,11 +14,14 @@ This section will focus on getting setup to run this system.
   ## 2. Configuration Files
   There are a number of different files in the <code>/nethermind</code> folder that will need to be edited to configure the blockchain to your individual needs.
   ### [<code>chainspec.json</code>](genesis/chainspec.json)
+  TODO
   ### [<code>config.cfg</code>](configs/config.cfg)
+  TODO
   ### [<code>static-nodes.json</code>](data/static-nodes.json)
+  TODO
   
   ## 3. Initialize Authority Node(s) (Optional)
-  TODO\
+  TODO
   
   ## 4. Initialize Local Node
   TODO
@@ -27,13 +30,13 @@ This section will focus on getting setup to run this system.
   TODO
 
 # Repository Contents
-  -[<code>/configs</code>](configs): Contains the configuration file for your local node
-  -[<code>/data</code>](data): Contains the static-nodes file used for static connections to known network nodes
-  -[<code>/configs</code>](configs): Contains various stored information about the network.  The size of this folder will grow each time you sync to the network and download new information.
-  -[<code>/genesis</code>](genesis): Contains the chainspec.json file, also known as the genesis file, that initialized the chain you want to connect to.
-  -<code>/keystore</code> (not shown): Contains all of the <code>.keystore</code> files for the accounts on your local node.
-  -<code>/logs</code> (not shown): Contains log files for monitoring and debugging your local node
-  -[<code>/plugins</code>](plugins): Contains various plugin files needed by the Nethermind client
+  - [<code>/configs</code>](configs): Contains the configuration file for your local node
+  - [<code>/data</code>](data): Contains the static-nodes file used for static connections to known network nodes
+  - [<code>/configs</code>](configs): Contains various stored information about the network.  The size of this folder will grow each time you sync to the network and download new information.
+  - [<code>/genesis</code>](genesis): Contains the chainspec.json file, also known as the genesis file, that initialized the chain you want to connect to.
+  - <code>/keystore</code> (not shown): Contains all of the <code>.keystore</code> files for the accounts on your local node.
+  - <code>/logs</code> (not shown): Contains log files for monitoring and debugging your local node
+  - [<code>/plugins</code>](plugins): Contains various plugin files needed by the Nethermind client
   
   
   

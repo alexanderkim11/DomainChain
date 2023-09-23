@@ -36,6 +36,59 @@ blockchain that is distributed, open, and extendable. To accomplish these goals,
 DomainChain.
 
 
+# Implementation:
+
+### Nethermind:
+   
+For this project, we chose to implement a private blockchain with only a few nodes connected
+for proof-of-concept purposes. There are several different clients that are available to connect
+to the Ethereum mainnet as well as any subnets or private networks. The most commonly used
+is Go-Ethereum, also known as Geth, which is provided by the Ethereum foundation. However,
+as mentioned above, Geth does not currently support any consensus protocols that allow for
+network permissioning, which was a key focus of our project. Consequently, we chose to use
+an alternative client called Nethermind. Nethermind supports both private networks, as well as
+the Authority Round (AuRa), a proof-of-authority (PoA) consensus algorithm that uses a
+designated smart contract to grant permissions to users/programs on the network.
+Traditionally, most blockchains use either proof-of-work (PoW) or proof-of-stake (PoS)
+consensus algorithms. However, as we were only attempting to provide a small-scale
+implementation of our idea, we chose to have a singular, trusted authority node on the network
+by way of the PoA algorithm. This node, which was running on a CS department server,
+instantly verified transactions on the network as they were published, provided that the publisher
+had the correct permissions in the permissioning smart contract. It is worth noting that although
+our solution used a PoA consensus algorithm, it was simply for convenience. Our idea could
+easily be used with an alternative PoW or PoS algorithm, assuming that the algorithm also
+supported network permissioning.
+The permissioning smart contract initializes a mapping between addresses and their
+corresponding allowed transaction types. Addresses in this case refers to both user accounts
+and smart contracts. However, altering this mapping (and consequently the permissioning of
+the network) requires an administrative account, which is set to the deployer of the
+permissioning contract. Ideally, this deployer/admin would be an account managed by ICANN
+or some other known and trusted authority.
+
+### Domain Registrar:
+   
+We define a domain registrar interface and use a smart contract to implement the name system.
+The contract keeps a mapping between the hash of the domain name and the address of the
+corresponding Domain contract, which contains the actual domain information. The lookUp
+function is used to query the registry and return the address of a registered domain by its name.
+The transferOwnership function transfers ownership of a domain from the current owner to a
+new owner, as long as the caller is the current owner.
+
+### Domains:
+  
+Individual Domain contracts contain a suite of information about that domain, which the creator
+provides as the time of initialization. Currently, that information includes things like the
+hostname, the IP address of the associated server, the name of the domain owner, and the
+public key of the domain needed for encryption. Note that the publicKey field is implemented as
+an Ethereum address, which is currently sent as the account address of the user who creates
+the domain. This works because the account which creates the domain is also a public key, and
+the user who creates it necessarily has access to the private key because they need it to sign
+and publish transactions. Domain contracts also contain a transferOwnership function, in case
+the owner of a domain wishes to transfer it to another person (or one of their alternate
+accounts).
+
+
+
 # Contents
 - [/contracts](contracts): Contains all Solidity contracts used to implement and regulate DomainChain.  See folder for more details
 - [/nethermind](nethermind): Contains most files (except executables) needed to run an Ethereum node from the Nethermind client.  See folder for more details.

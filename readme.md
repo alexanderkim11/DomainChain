@@ -2,6 +2,8 @@
 Ethereum-based alternative for Domain Name Service (DNS), built on Nethermind
 
 # Description
+This is a project for CS 6501: Network Security and Privacy in Spring 2022 at the University of Virginia.
+
 Currently, the foremost solution for mapping hostnames to server IP addresses is the Domain
 Name System, or DNS. While the usage of DNS is ubiquitous across global internet networks, it
 does have several weaknesses. The distributed and hierarchical collection of servers that make
@@ -33,8 +35,6 @@ network. Fundamentally, we want to develop a naming system that runs on the Ethe
 blockchain that is distributed, open, and extendable. To accomplish these goals, we propose
 DomainChain.
 
-
-This is a project for CS 6501: Network Security and Privacy out of the University of Virginia.
 
 # Contents
 - [/contracts](contracts): Contains all Solidity contracts used to implement and regulate DomainChain.  See folder for more details

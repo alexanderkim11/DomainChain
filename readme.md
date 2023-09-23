@@ -1,5 +1,5 @@
 # DomainChain
-Ethereum-based alternative for Domain Name Service (DNS), built on Nethermind
+An Ethereum-based alternative for Domain Name Service (DNS), built using Nethermind
 
 # Description
 This is a project for CS 6501: Network Security and Privacy in Spring 2022 at the University of Virginia.
